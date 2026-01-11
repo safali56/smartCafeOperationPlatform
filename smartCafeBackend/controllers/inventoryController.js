@@ -1,7 +1,7 @@
 import InventoryItem from "../models/inventoryItem.js";
 
 // Get all inventory items
-export const getInventory = async (req, res) => {
+export const getInventoryItem = async (req, res) => {
   const items = await InventoryItem.find();
   res.json(items);
 };
